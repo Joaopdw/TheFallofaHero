@@ -1,0 +1,91 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4q358tkkpdy1"]
+
+[ext_resource type="PackedScene" uid="uid://c61u4hy1wiliy" path="res://window_default.tscn" id="1_ip7xm"]
+[ext_resource type="Theme" uid="uid://t81p51k8v07f" path="res://default_Theme.tres" id="1_oxp8w"]
+
+[node name="Battle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_oxp8w")
+
+[node name="Backgroud" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0436631, 0.2405, 0.412861, 1)
+
+[node name="Bottom" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(200, 52)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -48.0
+offset_right = 100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="Enemies" parent="Bottom" instance=ExtResource("1_ip7xm")]
+layout_mode = 2
+
+[node name="Players" parent="Bottom" instance=ExtResource("1_ip7xm")]
+layout_mode = 2
+size_flags_stretch_ratio = 2.0
+
+[node name="Options" parent="." instance=ExtResource("1_ip7xm")]
+custom_minimum_size = Vector2(48, 52)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -52.0
+offset_right = -38.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_stretch_ratio = 2.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.5
+offset_top = -23.5
+offset_right = 17.5
+offset_bottom = 23.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -3
+
+[node name="Atack" type="Button" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Atack"
+
+[node name="magic" type="Button" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Magic"
+
+[node name="item" type="Button" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Item"
+
+[node name="defend" type="Button" parent="Options/VBoxContainer"]
+layout_mode = 2
+text = "Defend"
