@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://khg8ihnswdes"
+path="res://.godot/imported/hero-walk-right.aseprite-6a471f7a6df8384535d1b0247b3d3d96.res"
+
+[deps]
+
+source_file="res://Art/hero_walk/aseprite/hero-walk-right.aseprite"
+dest_files=["res://.godot/imported/hero-walk-right.aseprite-6a471f7a6df8384535d1b0247b3d3d96.res"]
+
+[params]
+
