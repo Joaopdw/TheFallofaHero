@@ -1,20 +1,23 @@
 [gd_scene load_steps=3 format=3 uid="uid://ck8vhmwa3gkg"]
 
-[ext_resource type="PackedScene" uid="uid://bjmsrbi5166br" path="res://player.tscn" id="1_gu41y"]
+[ext_resource type="PackedScene" uid="uid://bjmsrbi5166br" path="res://cena/player.tscn" id="1_gu41y"]
 [ext_resource type="Texture2D" uid="uid://dltdo84ivbs1v" path="res://Art/pantano_Finalizado_-_Fall_Of_a_hero.png" id="1_oe3p5"]
 
 [node name="Pantano" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture_filter = 1
-texture_repeat = 1
+texture_filter = 4
 texture = ExtResource("1_oe3p5")
 
 [node name="Player" parent="." instance=ExtResource("1_gu41y")]
 texture_filter = 1
 texture_repeat = 1
-position = Vector2(193, 77)
+position = Vector2(161, 90)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 texture_filter = 1
+limit_left = -472
+limit_top = -512
+limit_right = 472
+limit_bottom = 512
 position_smoothing_enabled = true

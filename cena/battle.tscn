@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b4q358tkkpdy1"]
 
-[ext_resource type="PackedScene" uid="uid://c61u4hy1wiliy" path="res://window_default.tscn" id="1_ip7xm"]
+[ext_resource type="PackedScene" uid="uid://c61u4hy1wiliy" path="res://cena/window_default.tscn" id="1_ip7xm"]
 [ext_resource type="Theme" uid="uid://t81p51k8v07f" path="res://default_Theme.tres" id="1_oxp8w"]
 
 [node name="Battle" type="Control"]
